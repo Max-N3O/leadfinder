@@ -1,0 +1,50 @@
+.height-100vh {
+  height: 100vh;
+}
+
+.index-button {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.mauve {
+  background-color: #F0EFFF;
+}
+
+.criteria-search-img {
+  background-image: url('/images/meeting.jpeg');
+  background-size: cover;
+}
+
+/* Table number ordering */
+
+table {
+  counter-reset: rowNumber;
+}
+
+table tbody tr {
+  counter-increment: rowNumber;
+}
+
+table tbody tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+}
+
+/* end Table number ordering */
+
+nav.ironleads {
+  color: white !important;
+}
+
+nav.ironleads a:hover {
+  color:#7A72FF !important;
+}
+
+.navbar-brand {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
